@@ -26,39 +26,30 @@ body {
     background-blend-mode: multiply;
 }
 
-
-
-
-
-
-
-
-
 /* background-color: Sets the background color of an element 
-            EX: background-color:#ff5733;
-*/
-
-/*  background-image: specifies an image to be used as the background. 
-        Ex: background-image: url('image.jpg');
-*/
+            EX: background-color:#ff5733; */
 
 
-/*  background-repeat: Determines how the background image repeats. 
+ /* background-image: specifies an image to be used as the background. 
+        Ex: background-image: url('image.jpg'); */
+
+
+
+ /* background-repeat: Determines how the background image repeats. 
         Values: repeat, repeat-x, repeat-y, no-repeat.
-        EX: background-repeat: repeat-x;
-*/
+        EX: background-repeat: repeat-x; */
 
-/*  background-position: sets the starting position of the background image. 
+
+ /* background-position: sets the starting position of the background image. 
         values: coordinates like top left, center centerl, bottom right, percentages, or length values.
-        EX: background-position: center center;
-*/
+        EX: background-position: center center; */
+
 
 /* background-size: Defines the size of the background image.
         values: auto, cover, contain, percentages, or length values.
-        EX: background-size: cover;
-*/
+        EX: background-size: cover; */
 
-/*  background-attachment: specifies if the background image scrolls with the content.
+
+ /* background-attachment: specifies if the background image scrolls with the content.
         values: sscroll, fixed, local .
-        EX: background-attachment: fixed;
-*/
+        EX: background-attachment: fixed; */
