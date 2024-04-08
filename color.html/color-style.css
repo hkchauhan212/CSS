@@ -1,0 +1,46 @@
+htmk {
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    color: chartreuse;
+}
+
+.main_color_box_rgb {
+    width: 70%;
+    height: 100%;
+}
+
+.para1 {
+    color: rgb(255, 0, 0);
+}
+
+.sp1 {
+    color: rgb(255, 255, 0);
+}
+
+.para2 {
+    color: rgb(0, 255, 0);
+}
+
+.sp2 {
+    color: rgb(0, 255, 255);
+}
+
+.para3 {
+    color: rgb(0, 0, 255);
+}
+
+.sp3 {
+    color: #ff00ff;
+}
+
+.color_para {
+    color: rgba(255, 0, 0, 0.8);
+    /* color: rgba(red, green, blue, alpha); */
+}
+
+.transparent{
+    color: transparent;
+}
