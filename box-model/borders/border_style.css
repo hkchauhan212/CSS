@@ -1,0 +1,66 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+body {
+    background-color: #010101;
+    color: #ff0000;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+#main-heading {
+    text-align: center;
+}
+
+
+p {
+    /* Write each property individual */
+
+    /* border-width: 15px;
+    border-style: solid;
+    border-color: black; */
+
+    /* border here   ------ MOST USE-----*/
+    border: 5px dotted rgb(38, 0, 255);
+
+    padding: 20px;
+
+    /* WE can Write them individually too */
+
+    /* border-top: 15px solid #003180;
+    border-right: 15px dotted #003b99;
+    border-bottom: 15px ridge #003b99;
+    border-left: 15px double #003b99; */
+
+    /* Now futher we can go more deeper with each individual values. */
+
+    /* border-top-width:  15px;
+    border-top-style: solid;
+    border-top-color: #003b99; */
+}
+
+/* border-style: --- */
+
+/* border-style: solid; */
+/* border-style: dashed; */
+/* border-style: dotted; */
+/* border-style: double; */
+
+div{
+    width: 500px;
+    height: 500px;
+    background-color: #4800ff;
+    /* border-radius: 100px 10px 250px 0px; */
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /* background-image: linear-gradient( to right top, #051937, #004d7a, #008793, #00b772, #a8eb12); */
+
+}
+
+
+/** NOTES + TIPS
+
+/* checkout more on here  👉 https://9elements.github.io/fancy-border-radius/ */
+/* checkout more on here  👉 https://10015.io/tools/css-border-radius-generator */
