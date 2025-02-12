@@ -1,0 +1,50 @@
+/* unorder list */
+.a{
+	list-style-type: disc;
+}
+.b{
+	list-style-type: circle;
+}
+.c{
+	list-style-type: square;
+}
+
+/* order list */
+.d{
+	list-style-type: decimal;
+}
+.e{
+	list-style-type: lower-roman;
+}
+.f{
+	list-style-type: lower-alpha;
+}
+.g{
+	list-style-type: none;
+}
+.h{
+	list-style-type: none;
+}
+
+.img{
+	list-style-image: url(img/radhe.png);
+}
+.order{
+	background-color: #ff9999;
+	padding: 20px;
+}
+.order_list{
+	background-color: #ffe5e5;
+	color: darkred;
+	padding: 5px;
+	margin-left: 35px;
+}
+.unorder{
+	background-color: #3399ff;
+	padding: 20px;
+}
+.unorder_list{
+	background: #cce5ff;
+  	color: darkblue;
+  	margin: 5px;
+}

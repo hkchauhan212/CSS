@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>outline</title>
+	<!-- An outline is a line drawn outside the element's border. -->
+	<style type="text/css">
+		div{
+			width: 45%;
+			border: 15px solid black;
+			outline: 4px dotted green;	
+			/*outline-offset: 15px;*/
+			/*outline-width: 2px;
+			outline-style: double;
+			outline-color: red;*/
+		}
+		p{
+			margin: 45px;
+			border: 2px solid red;
+			outline: 2px solid green;
+			outline-offset: 15px;
+			background-color: aqua;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.</p>
+</body>
+</html>
+
+<!-- 01:- What is outline  -->
+	<!-- An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+	CSS has the following outline properties:
+	outline-style: ;
+	outline-color
+	outline-width
+	outline-offset
+	outline -->
+
+<!-- 02:- CSS Outline Style -->
+	<!-- The outline-style property specifies the style of the outline, and can have one of the following values:
+	dotted - Defines a dotted outline
+	dashed - Defines a dashed outline
+	solid - Defines a solid outline
+	double - Defines a double outline
+	groove - Defines a 3D grooved outline
+	ridge - Defines a 3D ridged outline
+	inset - Defines a 3D inset outline
+	outset - Defines a 3D outset outline
+	none - Defines no outline
+	hidden - Defines a hidden outline -->
+
+<!-- 03:- CSS Outline Width -->
+	<!-- The outline-width property specifies the width of the outline, and can have one of the following values:
+	thin (typically 1px)
+	medium (typically 3px)
+	thick (typically 5px)
+	A specific size (in px, pt, cm, em, etc)
+	The following example shows some outlines with different widths: -->
+
+<!-- 04:- CSS Outline Color -->
+	<!-- The outline-color property is used to set the color of the outline.
+	The color can be set by:
+	name - specify a color name, like "red"
+	HEX - specify a hex value, like "#ff0000"
+	RGB - specify a RGB value, like "rgb(255,0,0)"
+	HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+	invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+	The following example shows some different outlines with different colors. Also notice that these elements also have a thin black border inside the outline: -->
+
+<!-- 05:- CSS Outline Offset-->
+	<!-- The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+	The following example specifies an outline 15px outside the border edge:
+	margin: 30px;
+	background: yellow;
+	border: 1px solid black;
+	outline: 1px solid red;
+	outline-offset: 15px; -->

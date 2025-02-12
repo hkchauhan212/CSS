@@ -1,0 +1,22 @@
+	/* this is css comment */
+	/* This is
+		a multi-line
+			comment */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.external{
+	margin-bottom: 10px;
+	background-color: gray;
+	color: whitesmoke;
+	padding: 15px;
+	font-size: 1.3rem;
+}
+.para01{
+	background-color: gray;
+	color: whitesmoke;
+	padding: 15px;
+	font-size: 1rem;
+}

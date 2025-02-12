@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout - Horizontal & Vertical Align</title>
+	<link rel="stylesheet" type="text/css" href="Horizontal_Vertical_Align.css">
+</head>
+<body>
+	<!-- This box is center align element. -->
+	<div class="center_align_element">
+		<p>To horizontally center a block element (like div), use margin: auto;</p>
+	</div>
+	<br><hr>
+	<!-- This box is center text. -->
+	<div class="center_text">
+		<p>This text is center.</p>
+	</div>
+	<br><hr>
+	<!-- center an image -->
+	<div class="img_center">
+		<img src="img/img03.jpg" alt="img" style="width: 40%;">
+	</div>
+	<br><hr>
+	<!-- Right align with the position property -->
+	<div class="position_property" title="Right align with the position property">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+	</div>
+	<br><hr>
+
+	<!-- overflow -->
+	<div class="overflow_div">
+		<p class="overflow">
+			<img src="img/img02.jpg" alt="img" width="300px" class="img01">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<br><hr>
+	<!-- Center vertically with padding -->
+	<div class="vertically_width_padding">
+		<p>Center vertically with padding</p>
+	</div>
+	<br><hr>
+	<!-- Center with padding and text-align -->
+	<div class="padding_text_align">
+		<p>Center with padding and text-align.</p>
+	</div>
+	<br><hr>
+	<!-- Center with position and transform -->
+	<div class="position_transform">
+		<p class="transform">Center with position and transform. using position:absolute, top 50%, left 50%, transform: translate(-50%, -50%)</p>
+	</div>
+	<!-- Flexbox Centering -->
+	<div class="main_flex_box">
+		<p class="box_flex">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</body>
+</html>
+
+<!-- 01:- Center Align Elements -->
+	<!-- To horizontally center a block element (like <div>), use margin: auto;
+	Setting the width of the element will prevent it from stretching out to the edges of its container.
+	The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+	Note: Center aligning has no effect if the width property is not set (or set to 100%). -->
+
+<!-- 02:- Center Align Text -->
+	<!-- To just center the text inside an element, use text-align: center; 
+
+	Center an Image:
+		To center an image, set left and right margin to auto and make it into a block element:-->
+
+<!-- 03:- Left and Right Align - Using position -->
+	<!-- One method for aligning elements is to use position: absolute;:
+		Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+			width: 35%;  border: 2px solid red;  margin: 20px;  position: absolute ;  right: 0px; -->
+
+<!-- 04:- Left and Right Align - Using float -->
+	<!-- Another method for aligning elements is to use the float property:
+		float: right; -->
+
+<!-- 05:- Center Vertically - Using position & transform -->
+	<!-- <div class="center">
+  		<p>I am vertically and horizontally centered.</p>
+	</div>
+		.center {
+		  height: 200px;
+		  position: relative;
+		  border: 3px solid green;
+		}
+
+		.center p {
+		  margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		} -->
+
+<!-- 06:- Center Vertically - Using Flexbox -->
+	<!-- <div class="center">
+  		<p>I am vertically and horizontally centered.</p>
+	</div>
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 200px;
+			border: 3px solid green;
+		} -->

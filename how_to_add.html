@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOW TO ADD CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		/* this is internal css */
+		.internal{
+			margin: 10px;
+			background-color: grey;
+			color: whitesmoke;
+			padding: 20px;
+			font-size: 1.4rem;
+		}
+		.internal_para{
+			background-color: grey;
+			color: whitesmoke;
+			margin: 20px;
+			font-size: 1.1rem;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- this is html comment
+		/* this is css comment */
+	-->
+	<div>
+		<section>
+			<!-- External css -->
+			<p class="external"><strong>External css</strong></p>
+			<p class="para01">This is External css. With an external style sheet, you can change the look of an entire website by changing just one file! <br> Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</p>
+		</section>
+		<section>
+			<!-- internal css -->
+			<p class="internal"><strong>internal css</strong></p>
+			<p class="internal_para">This is internal css. An internal style sheet may be used if one single HTML page has a unique style. <br> The internal style is defined inside the style element, inside the head section.</p>
+		</section>
+		<section>
+			<!-- inline css -->
+			<p style="background-color: grey; color: whitesmoke; font-size: 1.3rem; padding: 10px; margin: 30px;"><strong>inline css</strong></p>
+			<p style="background-color: grey; color: whitesmoke; padding: 10px; margin:40px;">This is inline css. An inline style may be used to apply a unique style for a single element. <br> To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property</p>
+		</section>
+	</div>
+</body>
+</html>

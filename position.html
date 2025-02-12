@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout - The position Property</title>
+	<link rel="stylesheet" type="text/css" href="position.css">
+</head>
+<body>
+	<section>
+		<div class="div01 box">static boox01 this box is defoult box</div>
+		<div class="div02 box">relative boox02 top 100px and right -500px</div>
+		<div class="div03 box">fixed boox03 bottom 0px and right 0px</div>
+		<div class="div04 box">absolute boox04 	top 0px and right 0px</div>
+		<div class="div05 box">sticky boox05 top 400px and right 400px</div>
+	</section>
+	<br>
+	<section></section>	
+</body>
+</html>
+
+<!-- 01:- The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). -->
+
+<!-- 02:- The position Property: 
+	The position property specifies the type of positioning method used for an element.
+		There are five different position values:
+		01 static
+		02 relative
+		03 fixed
+		04 absolute
+		05 sticky
+		Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value. -->
+
+<!-- 03:- position: static; 
+	HTML elements are positioned static by default.
+	Static positioned elements are not affected by the top, bottom, left, and right properties.
+	An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page: -->
+
+<!-- 04:-position: relative;
+	An element with position: relative; is positioned relative to its normal position.
+	Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. -->
+
+<!-- 05:- position: fixed;
+	An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+	A fixed element does not leave a gap in the page where it would normally have been located.
+	Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used: -->
+
+<!-- 06:- position: absolute; 
+	An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+	However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+	Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+	Here is a simple example:-->
+
+<!-- 07:- position: sticky;
+	An element with position: sticky; is positioned based on the user's scroll position.
+	A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+		Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of top, right, bottom or left for sticky positioning to work. -->

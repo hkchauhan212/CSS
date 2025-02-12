@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout - The display Property</title>
+	<style type="text/css">
+		.div{
+			display: flex;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			display: block;
+		}
+		.box1{
+			background-color: red;
+		}
+		.box2{
+			background-color: green;
+		}.box3{
+			background-color: blue;
+		}
+		.box4{
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<!-- This is block level element -->
+	<h1>Thsi is block-level element</h1>
+	<p>A block-level element ALWAYS starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+	<h3>h3 element is a block-level element.</h3>
+	<h4>h4 element is a block-level element.</h4>
+	<h5>h5 element is a block-level element.</h5>
+
+	<h1>Inline Elements:</h1>
+	<p>An inline element DOES NOT start on a new line and only takes up as much width as necessary.</p>
+	<a href="#">Home</a>
+	<a href="#">About us</a>
+	<a href="#">contect</a>
+	<a href="#">help</a>
+	<img src="img/sqpurple.jpg">
+	<img src="img/sqpurple.jpg">
+	<img src="img/sqpurple.jpg">
+	<hr><br>
+	<div class="div">
+		<p class="box1 box"></p>
+		<p class="box2 box"></p>
+		<p class="box3 box"></p>
+		<p class="box4 box"></p>
+	</div>
+</body>
+</html>
+
+<!--The display property is the most important CSS property for controlling layout. -->
+
+<!--01:- The display Property:  -->
+	<!-- The display property is used to specify how an element is shown on a web page.
+	Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or inline.
+	The display property is used to change the default display behavior of HTML elements. -->
+
+<!-- 02:- Block-level Elements: -->
+	<!-- A block-level element ALWAYS starts on a new line and takes up the full width available (stretches out to the left and right as far as it can)
+	Examples of block-level elements:
+		<div>
+		<h1> - <h6>
+		<p>
+		<form>
+		<header>
+		<footer>
+		<section> -->
+
+<!-- 03:- Inline Elements: -->
+	<!-- An inline element DOES NOT start on a new line and only takes up as much width as necessary.
+	This is an inline <span> element inside a paragraph
+	Examples of inline elements:
+		<span>
+		<a>
+		<img> -->

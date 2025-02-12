@@ -1,0 +1,116 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*CSS*/
+/*p{
+	margin: auto;
+	margin-top: 30px;
+	background-color: green;
+	width: 450px;
+	height: 50px;
+	text-align: center;
+	font-size: 2.2rem;
+}	
+a{
+	text-align: center;
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 15px;
+	color: black;
+}
+p:hover {
+	background-color: black;
+	color: white;
+	box-shadow: 10px 10px 15px pink;
+	border-radius: 30px;
+}
+a:hover {
+	color: white;
+	text-decoration: underline;
+}*/
+
+/* styling links */
+a{
+	display: inline-block;
+	margin: 50px 25px;
+	background-color: green;
+	text-decoration: none;
+	padding: 15px;
+	color: black;
+	font-size: 1.5rem;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  font-size: 2rem;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* Text Decoration */
+
+a:link{
+	text-decoration: underline;
+}
+
+a:visited{
+	text-decoration: overline;
+}
+
+a:hover{
+	text-decoration: line-through;
+}
+
+a:active{
+	text-decoration: underline;
+}
+
+/*Background Color*/
+
+a:link{
+	background-color: red;
+}
+
+a:visited{
+	background-color: green;
+}
+
+a:hover{
+	background-color: blue;
+}
+
+a:active{
+	background-color: pink;
+}
+
+.section{
+	display: grid;
+	margin: 50px;
+	gap: 10px;
+}
+
+.ancho:link, .anchor:visited {
+	background-color: white;
+	color: black;
+	border: 2px solid green;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}

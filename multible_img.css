@@ -1,0 +1,20 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+div{	
+	width: 100%;
+	height:620px;
+	background-image: url(https://www.w3schools.com/css/img_flwr.gif), url(https://www.w3schools.com/css/paper.gif);
+  	background-repeat: no-repeat, repeat;
+  	background-position: right bottom, left top;
+	border: 2px solid black;
+}
+.main_img{
+	margin-top: 15px;
+	width: 100%;
+	height: 550px;
+	background-image: url(./../photos/img02.jpg);
+	background-size: cover;
+}

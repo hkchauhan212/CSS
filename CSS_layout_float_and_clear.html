@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout - float and clear</title>
+	<style type="text/css">
+		img{
+			float: right;
+/*			float: left;*/
+/*			float: none;*/
+			margin-left: 25px;
+		}
+		.box{
+			float: right;
+			padding: 25px;
+		}
+		.div01{
+			background-color: red;
+		}
+		.div02{
+			background-color: yellow;
+		}
+		.div03{
+			background-color: green;
+		}
+
+	/* The clear Property */
+	.section02{
+		margin-top: 150px;
+	}
+		.div1 {
+  		float: left;
+  		padding: 10px;
+  		border: 3px solid #73AD21;
+		}
+
+		.div2 {
+  		padding: 10px;
+  		border: 3px solid red;
+		}
+
+		.div3 {
+  		float: left;
+  		padding: 10px;  
+  		border: 3px solid #73AD21;
+		}
+
+		.div4 {
+  		padding: 10px;
+  		border: 3px solid red;
+  		clear: left;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>This float right:</h1>
+	<div>
+		<img src="img/img02.jpg" style="width: 250px; height: 250px;">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<br><hr>
+	<section>
+		<div class="box div01">BOX01</div>
+		<div class="box div02">BOX02</div>
+		<div class="box div03">BOX03</div>
+	</section>
+	<section class="section02">
+		<h2>Without clear</h2>
+		<div class="div1">div1</div>
+		<div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+		<br><br>
+
+		<h2>With clear</h2>
+		<div class="div3">div3</div>
+		<div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+	</section>
+</body>
+</html>
+
+<!-- The CSS float property specifies how an element should float.
+The CSS clear property specifies what elements can float beside the cleared element and on which side. -->
+
+<!-- 01:- The float Property 
+ 	The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+	The float property can have one of the following values:
+	left - The element floats to the left of its container
+	right - The element floats to the right of its container
+	none - The element does not float (will be displayed just where it occurs in the text). This is default
+	inherit - The element inherits the float value of its parent
+	In its simplest use, the float property can be used to wrap text around images.-->
+
+<!-- 02:- CSS Layout - clear and clearfix 
+	When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+		The clear property specifies what should happen with the element that is next to a floating element.
+		The clear property can have one of the following values:
+		none - The element is not pushed below left or right floated elements. This is default
+		left - The element is pushed below left floated elements
+		right - The element is pushed below right floated elements
+		both - The element is pushed below both left and right floated elements
+		inherit - The element inherits the clear value from its parent
+		When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+		The clearfix Hack
+		If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:
+	
+		The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:-->

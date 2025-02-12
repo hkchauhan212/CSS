@@ -1,0 +1,52 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;	
+}
+.opacity_div{
+	width: 100%;
+	border: 1px solid black;
+}
+img{
+	width: 33%;
+	border: 2px solid red;
+	height: 350px;
+}
+.i01{
+	opacity: 1;
+}
+.i02{
+	opacity: 0.5;
+}
+.i03{
+	opacity: 0.3;
+}
+.p01{
+	width: 65%;
+	background-color: rgba(255, 255, 0	, 1.0);
+}
+.p02{
+	width: 65%;
+	background-color: rgba(255, 255, 0, 0.5);
+}
+.p03{
+	width: 65%;
+	background-color: rgba(255, 255, 0, 0.3);
+}
+
+.background{
+	width: 100%;
+	background-image: url(img/flower.jpg);
+	background-repeat: repeat;
+}
+.transbox{
+	margin: 25px 200px;
+	background-color: #ffffff;
+	border: 2px solid black;
+	opacity: 0.6;
+}
+.transbox p{
+	margin: 5%;
+	font-weight: bold;
+	color: #000000;
+}

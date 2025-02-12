@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}	
+section{
+	width: 95%;
+	height: 600px;
+	display: flex;
+	border: 1px solid black;
+}
+.box{
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 2px solid black;
+
+}
+	/* static as a difoult position */
+.div01{
+	background-color: blue;
+	position: static;
+	top: 100px;
+	right: 150px;
+}
+	/* relative mens the box move in this position.  */
+.div02{
+	background-color: gray;
+	position: relative;
+	top: 100px;
+	right: -500px;
+}
+	/* fixed  position as a work in this box is fixed then work in parent position. not a difoult position.*/
+.div03{
+	background-color: green;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+	/* absolute position is fixed but scrolling then this box is moved.*/
+.div04{
+	background-color: darkred;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+	/* sticky position is fixed then only this box. */
+.div05{
+	background-color: yellow;
+	position: sticky;
+	top: 400px;
+	right: 400px;
+}

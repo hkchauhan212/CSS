@@ -1,0 +1,71 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.center_align_element{
+	width: 60%;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 20px auto;
+}
+.center_text{
+	border: 3px solid black;
+	text-align: center;
+	width: 770px;
+}
+.img_center{
+	margin: 25px;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.position_property{
+	width: 35%;
+	border: 2px solid red;
+	margin: 20px;
+	position: absolute;
+	right: 0px;
+}
+.overflow_div{
+	margin-top: 150px;
+}
+.overflow{
+	border: 2px solid red;
+	overflow: auto;
+}
+.img01{
+	float: right;
+}
+.vertically_width_padding{
+	padding: 70px 0px;
+	border: 1px solid black;
+}
+.padding_text_align{
+	padding: 70px 0px;
+	border: 2px solid black;
+	text-align: center;
+}
+.position_transform{
+	margin-top: 50px;
+	height: 200px;
+	position: relative;
+	border: 3px solid black;
+}
+.transform{
+	margin: 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.main_flex_box{
+	margin-top: 100px;
+	border: 2px solid red;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

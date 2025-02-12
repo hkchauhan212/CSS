@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Attribute Selectors</title>
+	<style type="text/css">
+		[class*="test"]{
+			background-color: aqua;
+		}
+		[class|="top"] {
+  			background: yellow;
+		}
+		a[target="_blank"]{
+			background-color: aqua;
+		}
+		input[type="text"]{
+			border-radius: 20px;
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<h2>css [attribute*="test"] selector</h2>
+	<div class="first_test">The first div element.</div>
+	<div class="second">The first div element.</div>
+	<div class="my-test">The first div element.</div>
+	<div class="mytest">The first div element.</div>
+	<!-- CSS [attribute^="value"] Selector -->
+		<h2>CSS [attribute|="value"] Selector</h2>
+		<h1 class="top-header">Welcome</h1>
+		<p class="top-text">Hello world!</p>
+		<p class="topcontent">Are you learning CSS?</p>
+
+	<ul>
+		<li><a href="#" target="_blank">Home</a></li>
+		<li><a href="#" target="_top">About</a></li>
+		<li><a href="#" target="_blank">Help</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<input type="text" name=""  value="Enter your text">
+</body>
+</html>

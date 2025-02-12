@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>height and width and max-width</title>
+	<!-- The CSS height and width properties are used to set the height and width of an element 
+	The CSS max-width property is used to set the maximum width of an element  -->
+	<style type="text/css">
+		p{
+			width: 500px;
+			height: 100px;
+			/*border: 1px solid black;*/
+			background-color: aqua;
+		}
+		.max_width{
+			max-width: 45%;
+			max-height: 55px;
+			width: 720px;
+			height: 75px;
+			background-color: aqua;
+		}
+		div img{
+			width: 850px;
+			height: 680px;
+			border-radius: 15px;
+			min-width: 550px;
+			max-width: 800px;
+		}
+	</style>
+</head>
+<body>
+	<p>This is sample paragraph in height and width</p>
+	<br><hr>
+	<p class="max_width">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<div>
+		<img src="img/img02.jpg">
+	</div>
+</body>
+</html>
+
+<!-- 01:- CSS setting height and width -->
+	<!-- The height and width properties are used to set the height and width of an element.
+	The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element. -->
+
+<!-- 02:- CSS height and width Values -->
+	<!-- The height and width properties may have the following values:
+	auto - This is default. The browser calculates the height and width
+	length - Defines the height/width in px, cm, etc.
+	% - Defines the height/width in percent of the containing block
+	initial - Sets the height/width to its default value
+	inherit - The height/width will be inherited from its parent value -->
+
+<!-- 03:- Setting max-width -->
+	<!-- The max-width property is used to set the maximum width of an element.
+	The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+	The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+	Using max-width instead, in this situation, will improve the browser's handling of small windows.
+	Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs! -->
+

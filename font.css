@@ -1,0 +1,50 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	 font-family:"Sofia", sans-serif;
+}
+p{
+	padding: 10px;
+	font-size: 1.2rem;
+}
+p.cursive{
+	padding: 10px;
+	font-size: 1.2rem;
+	font-family: cursive;
+}
+p.Fantasy{
+	padding: 10px;
+	font-size: 1.2rem;
+	font-family: fantasy;
+	font-weight: 100;
+}
+/*best font family combination*/
+.pairing{
+	margin: 25px;
+	border: 2px solid red;
+	padding: 20px;
+}
+.heading01{
+	font-size: 30px;
+/*	font-family: Georgia, serif;*/
+/*	font-family: Helvetica, sans-serif;*/
+/*	font-family: Merriweather, serif;*/
+/*	font-family: Ubuntu, sans-serif;*/
+	font-family: 'Abril Fatface', serif;
+}
+.para10{
+  	font-size: 20px;
+/*	font-family: Verdana, sans-serif;*/
+/*	font-family: Garamond, serif;*/
+/*	font-family: "Open Sans", sans-serif;*/
+/*	font-family: Lora, serif;*/
+}
+
+.sort{
+/*	font: 16px Arial,sans-serif;*/
+	font: italic small-caps bold 30px Georgia, serif;
+}
+

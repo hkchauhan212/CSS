@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>List</title>
+	<link rel="stylesheet" type="text/css" href="list.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<!-- unorder list -->
+	<h2>This is unorder list:</h2>
+	<p>list style type disc</p>
+	<ul class="a">
+		<li>Google</li>
+		<li>Browser</li>
+		<li>Microsoft</li>
+	</ul>
+
+	<p>list style type circle</p>
+	<ul class="b">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola </li>
+	</ul>
+
+	<p>list style type squre</p>
+	<ul class="c">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola </li>
+	</ul>
+
+	<!-- order list -->
+	<h2>This is order list:</h2>
+	<p>list style type decimal</p>
+	<ol class="d">
+		<li>Google</li>
+		<li>Browser</li>
+		<li>Microsoft</li>
+	</ol>
+
+	<p>list style type lower-roman</p>
+	<p>list style type upper-roman</p>
+	<ol class="e">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola </li>
+	</ol>
+
+	<p>list style type lower-alpha</p>
+	<p>list style type upper-alpha</p>
+	<ol class="f">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola </li>
+	</ol>
+
+	<p>This is list style type none</p>
+	<ol class="g">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola </li>
+	</ol>
+
+	<!-- list style type img -->
+	<h2>The list-style-image Property.</h2>
+	<p>The list-style-image property specifies an image as the list item marker:</p>
+	<ul class="h">
+		<li> <i class="fa-solid fa-house"></i> Lorem ipsum dolor sit amet.</li>
+		<li> <i class="fa-solid fa-star"></i> Lorem ipsum dolor sit amet.</li>
+		<li> <i class="fa-solid fa-heart"></i> Lorem ipsum dolor sit amet.</li>
+	</ul>
+	<!-- This is unorder list img using style type img: url(); -->
+	<ul class="img">
+		<li>Apple</li>
+		<li>OppO</li>
+		<li>samsung</li>
+	</ul>
+	<p>This is unoreder list background-color</p>
+	<ol class="order">
+  		<li class="order_list">Coffee</li>
+  		<li class="order_list">Tea</li>
+  		<li class="order_list">Coca Cola</li>
+	</ol>
+
+	<ul class="unorder">
+  		<li class="unorder_list">Coffee</li>
+  		<li class="unorder_list">Tea</li>
+  		<li class="unorder_list">Coca Cola</li>
+	</ul>
+
+
+</body>
+</html>
+
+
+<!-- 01:- HTML Lists and CSS List Properties -->
+	<!-- In HTML, there are two main types of lists:
+	unordered lists (<ul>) - the list items are marked with bullets
+	ordered lists (<ol>) - the list items are marked with numbers or letters
+
+	The CSS list properties allow you to:
+	Set different list item markers for ordered lists
+	Set different list item markers for unordered lists
+	Set an image as the list item marker
+	Add background colors to lists and list items -->
+
+<!-- 02:- Different List Item Markers -->
+	<!-- The list-style-type property specifies the type of list item marker.
+	The following example shows some of the available list item markers:
+	list-style-type: circle;
+	list-style-type: square;
+	list-style-type: upper-roman;
+	list-style-type: lower-alpha; 
+	list-style-position: outside;
+	list-style-position: inside;
+	Remove Default Settings-->
+
+<!-- 03:- List - Shorthand property -->
+	<!-- The list-style property is a shorthand property. It is used to set all the list properties in one declaration:
+	list-style: square inside url("sqpurple.gif");
+
+	When using the shorthand property, the order of the property values are:
+	list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+	list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)
+	list-style-image (specifies an image as the list item marker)
+	If one of the property values above is missing, the default value for the missing property will be inserted, if any. -->

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Padding</title>
+	<!-- The CSS padding properties are used to generate space around an element's content, inside of any defined borders. -->
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		div{
+			background-color: aqua;
+			width: 550px;
+			padding-top: 25px;
+			padding-right: 50px;
+			padding-bottom: 75px;
+			padding-left: 100px;
+			margin: auto;
+			margin-bottom: 25px;
+		}
+		.padding01{
+			background-color: aqua;
+			width: 550px;
+			padding: 25px 50px 75px 100px;
+			margin-bottom: 25px;
+		}
+		.padding02{
+			background-color: aqua;
+			width: 550px;
+			padding: 50px 100px;
+			margin-bottom: 25px;
+		}
+		.padding03{
+			background-color: aqua;
+			width: 550px;
+			padding: 100px;
+			margin-bottom: 25px;
+		}
+		.padding04{
+			background-color: aqua;
+			width: 550px;
+			padding: 25px 75px 25px;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</div>
+	<p class="padding01">div work in one propery using padding: 25px 50px 75px 100px;</p>
+	<p class="padding02">If the padding property has two values: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<p class="padding03"> The padding property has work top right bottom and left usiiing one property.</p>
+	<p class="padding04"> The padding property has work top, right/left bottom usiiing one property.</p>
+</body>
+</html>
+
+<!-- 01:- Padding - Individual Sides -->
+	<!-- CSS has properties for specifying the padding for each side of an element:
+	padding-top
+	padding-right
+	padding-bottom
+	padding-left
+	All the padding properties can have the following values:
+	length - specifies a padding in px, pt, cm, etc.
+	% - specifies a padding in % of the width of the containing element
+	inherit - specifies that the padding should be inherited from the parent element	
+	Negative values are not allowed. -->
+
+<!-- 02:- Padding - Shorthand Property -->
+	<!-- To shorten the code, it is possible to specify all the padding properties in one property.
+	The padding property is a shorthand property for the following individual padding properties:
+	padding-top
+	padding-right
+	padding-bottom
+	padding-left
+	So, here is how it works:
+
+	If the padding property has four values:
+	padding: 25px 50px 75px 100px;	
+	top padding is 25px
+	right padding is 50px
+	bottom padding is 75px
+	left padding is 100px
+
+	padding: 25px 50px 75px;
+	top padding is 25px
+	right and left paddings are 50px
+	bottom padding is 75px
+
+	padding: 25px 50px;
+	top and bottom paddings are 25px
+	right and left paddings are 50px
+
+	padding: 25px;
+	all four paddings are 25px -->

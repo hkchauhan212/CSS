@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout - The z-index Property</title>
+	<style type="text/css">
+		img {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 2;
+		}
+
+		h1 {
+			position: relative;
+			z-index: 5;
+		}
+
+		p {
+			position: relative;
+			z-index: 5;
+		}
+
+		.main-box {
+			position: relative;
+		}
+
+		.blackbox {
+			position: relative;
+			z-index: 1;
+			border: 2px solid black;
+			height: 150px;
+			margin: 30px;
+		}
+
+		.greenbox {
+			position: absolute;
+			z-index: 2;
+			background-color: lightgreen;
+			width: 35%;
+			left: 270px;
+			top: -15px;
+			height: 100px;
+		}
+
+		.graybox {
+			position: absolute;
+			z-index: 3;
+			background-color: grey;
+			height: 60px;
+			width: 70%;
+			left: 50px;
+			top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>This is heading</h1>
+	<img src="img/tree.jpg">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br><br>
+	<hr>
+	<div class="main-box">
+		<div class="blackbox">Black box (Z-index: 01)</div>
+		<div class="greenbox">Green box (Z-index: 02)</div>
+		<div class="graybox">Gray box (Z-index: 03)</div>
+	</div>
+</body>
+
+</html>
+
+<!-- 01:- The z-index Property -->
+<!-- When elements are positioned, they can overlap other elements.
+	The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+	An element can have a positive or negative stack order:
+	z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements). -->

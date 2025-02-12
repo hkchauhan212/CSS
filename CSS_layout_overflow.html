@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout - Overflow</title>
+	<style type="text/css">
+		.visible{
+			width: 250px;
+			height: 100px;
+			background-color: orange;
+			overflow: visible;
+			margin-bottom: 250px;
+		}
+		.hidden{
+			width: 250px;
+			height: 100px;
+			background-color: orange;
+			overflow: hidden;
+		}
+		.scroll{
+			width: 250px;
+			height: 100px;
+			background-color: orange;
+			overflow: scroll;
+		}
+		.auto{
+			width: 250px;
+			height: 100px;
+			background-color: orange;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div>
+			<p class="visible"> <strong> "This is overflow visible."</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<br><br><hr>
+		</div>
+		<div>
+			<p class="hidden"><strong> "this is overflow hidden" </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<br><br><hr>
+		</div>
+		<div>
+			<p class="scroll"> <strong>"this is overflow scroll" </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<br><br><hr>
+		</div>
+		<div>
+			<p class="auto"> <strong>"this is overflow auto" </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+</body>
+</html>
+
+
+<!-- The CSS overflow property controls what happens to content that is too big to fit into an area. -->
+<!-- 01:- CSS Overflow 
+	The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+	The overflow property has the following values:
+	visible - Default. The overflow is not clipped. The content renders outside the element's box
+	hidden - The overflow is clipped, and the rest of the content will be invisible
+	scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+	auto - Similar to scroll, but it adds scrollbars only when necessary
+
+	Note: The overflow property only works for block elements with a specified height.
+	Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).-->
+
+<!-- 02:- overflow: visible 
+	By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:-->
+
+<!-- 03:- overflow: hidden
+	With the hidden value, the overflow is clipped, and the rest of the content is hidden: -->
+
+<!-- 04:- overflow: scroll 
+	Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):-->
+
+<!-- 05:- overflow: auto 
+	The auto value is similar to scroll, but it adds scrollbars only when necessary:-->

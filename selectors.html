@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Css Selector</title>
+	<style type="text/css">
+		/*This is universal selecter*/
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		/* element selector */
+		h1{
+			color: white;
+			background-color: red;
+			padding: 15px;
+		}
+		/* element selector */
+		h2{
+			color: white;
+			background-color: black;
+			padding: 15px;
+		}
+		/* element selector */
+		h3{
+			color: white;
+			background-color: aqua;
+			padding: 15px;
+		}
+		/* id selector */
+		#div01{
+			margin: 25px 30%;
+			border-radius: 25px;
+		}
+		/* class selector */
+		.para{
+			color: blue;
+			padding: 20px;
+		}
+		/* grouping selector */
+		p, h1, h2, h3{
+			border: 5px solid red;
+			margin-top: 25px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div id="div01">
+			<h1 class="heading_one">This is a simple heading 01.</h1>
+			<p class="para01 para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div>
+			<h2 class="heading_two">This is a simple sub-heading 02.</h2>
+			<p class="para02 para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div>
+			<h3 id="heading_three">This is a simple sub-subheading 03.</h3>
+			<p class="para03 para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</section>
+</body>
+</html>
+
+<!-- A CSS selector selects the HTML element(s) you want to style. -->
+
+<!-- 01:- CSS Selectors -->
+	<!-- CSS selectors are used to "find" (or select) the HTML elements you want to style.
+	We can divide CSS selectors into five categories:
+	- Simple selectors (select elements based on name, id, class).
+	- Combinator selectors (select elements based on a specific relationship between them).
+		descendant selector (space)
+		child selector (>)
+		adjacent sibling selector (+)
+		general sibling selector (~)
+	- Pseudo-class selectors (select elements based on a certain state).
+		l - link "unvisited link"
+		v - visited "visited link"
+		h - hover "mouse over link"
+		a - active "selected link"
+		a:link{color}, a:visited{color}, a:hover{color}, a:active{color},
+	- Pseudo-elements selectors (select and style a part of an element).
+	- Attribute selectors (select elements based on an attribute or attribute value).
+	- This page will explain the most basic CSS selectors. -->
+
+<!-- <p></p>, <h1 class="heading"></h1>, <a href="" id="anchor"></a>, <button></button> -->
+
+<!-- 02:- The CSS element Selector -->
+	<!-- p{color: red; font-size: 15px;} -->
+
+<!-- 03:- The CSS id Selector -->
+	<!-- #p{color: red; font-size: 15px;} -->
+
+<!-- 04:- The CSS class Selector -->
+	<!-- .p{color: red; font-size: 15px;} -->
+	<!-- h1.heading{color: red; font-size: 15px;} -->
+
+<!-- 5:- The CSS Universal Selector -->
+	<!-- *{box-sizing: border-box; padding: 10px;} -->
+
+<!-- 06:- The CSS Grouping Selector -->
+	<!-- p, h1, a{text-align: center; color: red;} -->
